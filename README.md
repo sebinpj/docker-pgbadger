@@ -1,35 +1,34 @@
-# matsuu/pgbadger
+# sebinpj/pgbadger
 
-Dockerfile for pgBadger
+Dockerfile for pgBadger fork from matsuu/pgbadger
 
 ##  Usage
 
 ### Images
 
-* Docker Hub: [matsuu/pgbadger](https://hub.docker.com/r/matsuu/pgbadger/)
-* GitHub Container Registry: [ghcr.io/matsuu/pgbadger](https://github.com/matsuu/docker-pgbadger/pkgs/container/pgbadger)
+* Docker Hub: [sebinpj/pgbadger](https://hub.docker.com/r/sebinpj/pgbadger/)
 
 ### PostgreSQL with default prefix
 
 ```
-cat slow.log | docker run -i --rm matsuu/pgbadger - -o - -x html > out.html
+cat slow.log | docker run -i --rm sebinpj/pgbadger - -o - -x html > out.html
 ```
 
 ### RDS for PostgreSQL
 
 ```
-cat slow.log | docker run -i --rm matsuu/pgbadger -f rds - -o - -x html > out.html
+cat slow.log | docker run -i --rm sebinpj/pgbadger -f rds - -o - -x html > out.html
 ```
 
 ### help
 
 ```
-docker run -i --rm matsuu/pgbadger --help
+docker run -i --rm sebinpj/pgbadger --help
 ```
 
 ## References
 
 * [pgBadger official site](https://pgbadger.darold.net/)
-* GitHub [matsuu/docker-pgbadger](https://github.com/matsuu/docker-pgbadger)
-* Docker Hub [matsuu/pgbadger](https://hub.docker.com/r/matsuu/pgbadger/)
-* GitHub Container Registry [ghcr.io/matsuu/pgbadger](https://github.com/matsuu/docker-pgbadger/pkgs/container/pgbadger)
+* GitHub [sebinpj/docker-pgbadger](https://github.com/sebinpj/docker-pgbadger)
+* Original Repo [matsuu/docker-pgbadger](https://github.com/matsuu/docker-pgbadger)
+* Docker Hub [sebinpj/pgbadger](https://hub.docker.com/r/sebinpj/pgbadger/)
