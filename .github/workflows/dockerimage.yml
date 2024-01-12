@@ -33,7 +33,7 @@ jobs:
       - uses: docker/build-push-action@v3
         with:
           context: .
-          platforms: linux/amd64,linux/arm64,linux/arm/v6,linux/arm/v7,linux/ppc64le
+          platforms: linux/amd64,linux/arm64,linux/arm/v6,linux/arm/v7,linux/arm64/v8,linux/ppc64le
           push: ${{ github.ref_type == 'tag' }}
           sbom: true
           tags: ${{ steps.meta.outputs.tags }}
